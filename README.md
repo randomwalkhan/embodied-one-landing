@@ -2,6 +2,10 @@
 
 Single-page, investor-facing concept site for a futuristic robotics startup focused on embodied AI.
 
+![Embodied One landing page preview](./assets/repo-preview.png)
+
+[Live Demo](https://randomwalkhan.github.io/embodied-one-landing/) | [Repository](https://github.com/randomwalkhan/embodied-one-landing)
+
 ## Stack
 
 - Static `HTML` + `CSS` + `JavaScript`
@@ -12,6 +16,8 @@ Single-page, investor-facing concept site for a futuristic robotics startup focu
 
 ```text
 robotics-landing/
+  assets/
+    repo-preview.png
   index.html
   styles.css
   script.js

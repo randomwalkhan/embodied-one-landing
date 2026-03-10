@@ -7,6 +7,7 @@ const interestForm = document.getElementById("interest-form");
 const formResponse = document.querySelector(".form-response");
 const footerYear = document.getElementById("footer-year");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const previewMode = new URLSearchParams(window.location.search).get("preview");
 
 footerYear.textContent = new Date().getFullYear();
 
@@ -51,7 +52,10 @@ function updateHeroFromScroll() {
   applyActivation(progress);
 }
 
-if (prefersReducedMotion) {
+if (previewMode === "live") {
+  applyActivation(1);
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+} else if (prefersReducedMotion) {
   applyActivation(1);
   revealItems.forEach((item) => item.classList.add("is-visible"));
 } else {
